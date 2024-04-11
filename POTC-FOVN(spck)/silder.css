@@ -1,0 +1,46 @@
+
+
+#sk-1 ul{
+    list-style: none;
+    display: flex;
+}
+#sk-1 ul li{
+    margin-left: 20px;
+}
+#sk-1 ul li button a{
+    text-decoration: none;
+}
+hr{
+    width: 90%;
+    margin-right: 100px;
+}
+#im img{
+    width: 104px;
+    height: 58px;
+    margin-right: 10px;
+}
+#im{
+    margin-left: 20px;
+}
+/* .slider {
+    scroll-snap-type: x mandatory;  
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    /* -webkit-overflow-scrolling: touch; */
+  /* }
+  .slide > div {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+    scroll-snap-align: start;
+  } */ 
+  #the img{
+    display: block;
+
+    
+  }
+  #the a{
+    text-decoration: none;
+  }

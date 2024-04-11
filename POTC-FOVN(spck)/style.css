@@ -22,6 +22,7 @@
 #head-left {
     margin-right: auto;
     display: flex;
+    
 }
 
 #left-icon {
@@ -32,6 +33,25 @@
 
 #left-icon li a {
     margin-left: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+#head-right ul{
+    display: flex;
+    list-style: none;
+
+}
+#head-right ul li button{
+background-color: #07f468;
+}
+#head-right ul li :hover{
+    background-color: whitesmoke;
+}
+#head-right ul li button a {
+    border: 20%;
+    text-decoration: none;
+    color: #000000;
+    
 }
 
 
@@ -43,17 +63,38 @@
     margin: auto;
     height: 50%;
 }
+#u-footer{
+    background-color: #000000;
+}
 
 #us {
     width: 30%;
+   
+    
+}
+#us img{
+   
+}
+#us ul{
+list-style: none;
+display: flex;
+margin-top: 30px;
+
+}
+#us ul li{
+    margin-left: 30px;
+    
+}
+#us ul li i{
+font-size: 30px;
 }
 
 #contast ul li {
     list-style-type: none;
+    margin-top: 20px;
 }
-
 #contast ul li a i {
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
     color: turquoise;
 }
