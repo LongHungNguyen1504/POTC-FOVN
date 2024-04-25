@@ -1,0 +1,38 @@
+#news h1 {
+    text-align: center;
+}
+
+#new {
+    background-image: url('../images/bg-news-banner.jpg');
+
+}
+
+.button {
+    list-style: none;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+}
+
+.button li {
+    margin-left: 10px;
+
+}
+
+.button li button a {
+    text-decoration: none;
+}
+
+#m-post {
+    background-color: black;
+    width: 326px;
+    margin-bottom: 10px;
+}
+#poster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
