@@ -84,3 +84,7 @@
 #logo {
     width: 270px;
 }
+
+.player-list-table {
+    display: flex;
+}
