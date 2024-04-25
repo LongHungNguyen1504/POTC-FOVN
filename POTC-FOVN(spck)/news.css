@@ -26,7 +26,13 @@
     text-decoration: none;
 }
 
-/* #m-post {
+#m-post {
     background-color: black;
     width: 326px;
-} */
+    margin-bottom: 10px;
+}
+#poster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
