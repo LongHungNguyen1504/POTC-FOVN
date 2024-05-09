@@ -34,9 +34,28 @@ nav.before .active-element {
 
 }
 
-#header img {
-    width: 50px;
+#st-events {
+    background: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-events.jpg);
+}
 
+.st-events__title {
+    text-align: center;
+    font-size: 50px;
+    font-family: "CruyffSansVN", sans-serif;
+    font-weight: 900;
+    line-height: 1.4em;
+    position: relative;
+    margin: 0 0 15px;
+    color: #010101;
+    text-transform: uppercase;
+}
+
+.st-events__item--name {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    color: #141c31;
 }
 
 #header {
@@ -215,4 +234,12 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+#logo {
+    width: 270px;
+}
+
+.player-list-table {
+    display: flex;
 }
