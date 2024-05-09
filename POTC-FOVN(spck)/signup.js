@@ -1,5 +1,7 @@
 let signupForm = document.getElementById('signup-form')
 
+// const Swal = new Swal();
+
 signupForm.addEventListener('submit', (event) => {
     event.preventDefault()
 
@@ -20,7 +22,7 @@ signupForm.addEventListener('submit', (event) => {
     } else if (!isValidEmail(email)) {
         Swal.fire({
             title: 'Invalid Email!',
-            text: 'Email domain must be google.com! Please enter again!',
+            text: 'Email domain must be gmail.com! Please enter again!',
             icon: 'error',
             confirmButtonText: 'OK'
         })
@@ -33,7 +35,7 @@ signupForm.addEventListener('submit', (event) => {
             confirmButtonText: 'OK'
         })
         return
-    } else if (!isValidPassword(password)) {
+    } else if (!isValidPassword(password1)) {
         Swal.fire({
             title: 'Invalid Password!',
             text: 'Password must contain letters and numbers! Please enter again!',
@@ -41,7 +43,16 @@ signupForm.addEventListener('submit', (event) => {
             confirmButtonText: 'OK'
         })
         return
+    } else if (!isValidPassword(password2)) {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Password do not match",
+            footer: '<a href="#">Why do I have this issue?</a>'
+        })
+        return
     }
+
 
     Swal.fire({
         title: 'Success!',
@@ -56,7 +67,7 @@ signupForm.addEventListener('submit', (event) => {
 // Hãy thực hiện kiểm tra tên người dùng (2.5đ)
 // Yêu cầu: Tên người dùng phải có ít nhất 8 ký tự
 function isValidUsername(username) {
-    if (username.length < 8) {
+    if (username.length <= 8) {
         return false
     } else {
         return true
@@ -77,14 +88,19 @@ function isValidEmail(email) {
 // Hãy thực hiện kiểm tra số điện thoại người dùng (2.5đ)
 // Yêu cầu: Số điện thoại phải luôn bắt đầu bằng +84
 function isValidPhone(phone) {
-
     const phoneRegex = /^(\+84)\d+$/;
     return phoneRegex.test(phone);
 }
 
 // Hãy thực hiện kiểm tra mật khẩu người dùng (2.5đ)
 // Yêu cầu: Mật khẩu nhập vào phải bao gồm chữ và số
-function isValidPassword(password) {
+function isValidPassword(password1) {
     const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-    return regex.test(password);
+    return regex.test(password1);
 }
+
+function isValidPassword(password2) {
+    if (password1 == password2)
+        return true
+}
+
