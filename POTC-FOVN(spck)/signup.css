@@ -19,11 +19,11 @@ body {
 
 .form-container input {
     margin: 10px 0;
-    
+
 }
 
 .form-container input::placeholder {
-    color: ;
+    color: grey;
 }
 
 .form-container button {
