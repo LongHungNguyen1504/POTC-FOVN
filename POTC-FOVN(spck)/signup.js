@@ -35,7 +35,7 @@ signupForm.addEventListener('submit', (event) => {
             confirmButtonText: 'OK'
         })
         return
-    } else if (!isValidPassword(password1)) {
+    } else if (!isValidPassword(password)) {
         Swal.fire({
             title: 'Invalid Password!',
             text: 'Password must contain letters and numbers! Please enter again!',
@@ -43,7 +43,7 @@ signupForm.addEventListener('submit', (event) => {
             confirmButtonText: 'OK'
         })
         return
-    } else if (!isValidPassword(password2)) {
+    } else if (!isValidPassword1(password1)) {
         Swal.fire({
             icon: "error",
             title: "Oops...",
@@ -99,8 +99,10 @@ function isValidPassword(password1) {
     return regex.test(password1);
 }
 
-function isValidPassword(password2) {
-    if (password1 == password2)
+
+function isValidPassword1(password) {
+    if (password == password1)
         return true
+
 }
 
