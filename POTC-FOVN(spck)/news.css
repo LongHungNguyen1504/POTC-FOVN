@@ -36,3 +36,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#hlv{
+
+    background-color: black;
+}
+#hlv-1 h2{
+    color: white;
+    margin-left: 5px;
+}
+#hlv-1{
+    width: 50%z;
+}
