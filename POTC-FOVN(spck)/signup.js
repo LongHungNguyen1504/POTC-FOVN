@@ -35,7 +35,7 @@ signupForm.addEventListener('submit', (event) => {
             confirmButtonText: 'OK'
         })
         return
-    } else if (!isValidPassword(password1)) {
+    } else if (!isValidPassword(password)) {
         Swal.fire({
             title: 'Invalid Password!',
             text: 'Password must contain letters and numbers! Please enter again!',
@@ -43,7 +43,7 @@ signupForm.addEventListener('submit', (event) => {
             confirmButtonText: 'OK'
         })
         return
-    } else if (!isValidPassword(password2)) {
+    } else if (!isValidPassword1(password1)) {
         Swal.fire({
             icon: "error",
             title: "Oops...",
@@ -94,13 +94,30 @@ function isValidPhone(phone) {
 
 // Hãy thực hiện kiểm tra mật khẩu người dùng (2.5đ)
 // Yêu cầu: Mật khẩu nhập vào phải bao gồm chữ và số
-function isValidPassword(password1) {
+function isValidPassword(password) {
     const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-    return regex.test(password1);
+    return regex.test(password);
 }
 
-function isValidPassword(password2) {
-    if (password1 == password2)
+function isValidPassword1(password) {
+    if (password == password1)
         return true
 }
 
+const signup_form = document.querySelector("#signup-form")
+signup_form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    
+    const username = signup_form['username'].value
+    const email = signup_form['email'].value
+    const password = signup_form['password'].value
+    // console.log(username, email, password)
+
+    auth.createUserWithEmailAndPassword(email, password).then(
+        (cred) => {
+            alert("Sign up successfully!")
+            console.log(cred)
+            signup_form.reset()
+        }
+    )
+})

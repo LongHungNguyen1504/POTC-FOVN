@@ -29,11 +29,11 @@
             </label>
             <input name="phone" type="tel" id="phone" placeholder="Số điện thoại...(+84) " class="form-control"
                 required>
-            <label for="password1"></label>
-            <input name="password1" type="password" id="password1" placeholder="Mật khẩu..." class="form-control"
+            <label for="password"></label>
+            <input name="password" type="password" id="password" placeholder="Mật khẩu..." class="form-control"
                 required>
-            <label for="password2"></label>
-            <input name="password2" type="password" id="password2" placeholder="Nhập lại mật khẩu..."
+            <label for="password1"></label>
+            <input name="password1" type="password" id="password1" placeholder="Nhập lại mật khẩu..."
                 class="form-control" required>
             <button type="submit">Đăng ký</button>
         </form>
@@ -64,7 +64,33 @@
 
         <!-- <script src="main.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        <script src="signup.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDxWjiE0lJFOm6zP2giAp5YZtbA1SC3QZI",
+            authDomain: "jsi04-94726.firebaseapp.com",
+            projectId: "jsi04-94726",
+            storageBucket: "jsi04-94726.appspot.com",
+            messagingSenderId: "1078261584635",
+            appId: "1:1078261584635:web:38f7a8e46e2e8c1afd165e",
+            measurementId: "G-6PTFG3Z6LC"
+        };
+
+        // Your web app's Firebase configuration
+        firebase.initializeApp(firebaseConfig)
+
+        // Initialize Firebase
+
+        const auth = firebase.auth()
+        const database = firebase.database()
+    </script>
+    <script src="signup.js"></script>
 </body>
 
 </html>
