@@ -99,9 +99,11 @@ function isValidPassword(password) {
     return regex.test(password);
 }
 
+
 function isValidPassword1(password) {
     if (password == password1)
         return true
+
 }
 
 const signup_form = document.querySelector("#signup-form")
