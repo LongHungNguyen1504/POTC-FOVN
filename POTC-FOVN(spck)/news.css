@@ -3,7 +3,7 @@
 }
 
 #new {
-    background-image: url('../images/bg-news-banner.jpg');
+  background-color: url('./images/bg\ ban.jpg');
 
 }
 
@@ -39,11 +39,92 @@
 #hlv{
 
     background-color: black;
+    display: flex;
 }
-#hlv-1 h2{
+#mot{
+    margin-left: 100px;
+}
+#mot h2{
     color: white;
     margin-left: 5px;
 }
 #hlv-1{
-    width: 50%z;
+    width: 50%;
+}
+#hai button{
+    border-radius: 10%;
+    width: 150px;
+    height: 30px;
+}
+#hai{
+    text-align: center;
+}
+#hlv-2 img{
+    width :445px;
+    height: auto;
+}
+#title{
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title h2{
+    margin-right: auto;
+}
+#loichoi{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#in4 img{
+    width: 100%;
+}
+#baotrum{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hinhanhdong{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./images/bg.jpg');
+    animation: scale 8s infinite linear;
+    display: flex;
+}
+@keyframes scale {
+    0%, 40%, 80%, 100%{
+        transform: scale(1);
+    }
+    20%, 60%{
+        transform: scale(1.01);
+    }
+}
+#key{
+    animation: rotate 2s linear infinite;
+
+
+}
+@keyframes rotate {
+  0%, 50%, 100%{
+    transform: rotateY(0deg);
+   
+  } 
+  25% {
+    transform: rotateY(-5deg);
+  }
+  75%{
+    transform: rotateY(5deg);
+  }
+  
+}
+#vs{
+
+}
+#taycam{
+    position: absolute;
+    right: 4.6875vw;
+    top: 1.5625vw;
+    width: 22.0833333333vw;
 }

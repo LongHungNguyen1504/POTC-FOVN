@@ -1,8 +1,8 @@
-/* #anh img{
+#anh img{
     width: 50px;
     
 }
-#cauthu{
+.cauthu{
     display: flex;
     background-color: #1a242a
 }
@@ -42,7 +42,7 @@
 }
 #luong b, #ovr b, #sta b{
     color: white;
-} */
+}
 #top{
     margin-left: 250px;
 }
