@@ -9,61 +9,27 @@ nav ul {
 nav.before .active-element {
     transform: rotateY(180deg);
 }
-
-#header h1 {
-    display: flex;
-    margin-left: 100px;
-    margin-right: 50px;
-
-    color: aliceblue;
-    margin-top: auto;
-    font-family: -apple-system, BlinkMacSystemFont;
-
-}
-
-#st-events {
-    background: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-events.jpg);
-}
-
-.st-events__title {
-    text-align: center;
-    font-size: 50px;
-
-    font-weight: 900;
-    line-height: 1.4em;
-    position: relative;
-    margin: 0 0 15px;
-    color: #010101;
-    text-transform: uppercase;
-}
-
-.st-events__item--name {
-    font-size: 25px;
-    font-weight: 700;
-    font-family: "Roboto Condensed", sans-serif;
-    text-transform: uppercase;
-    color: #141c31;
-}
-
+/* header */
 #header {
     background-color: #000000;
     display: flex;
+    align-items: center;
 }
 
 #head-left {
     margin-right: auto;
     display: flex;
-
 }
-
-#left-icon {
+#left-icon,
+#right-icon {
     display: flex;
     list-style: none;
+    align-items: center;
 
 }
 
 #left-icon li a {
-    margin-left: 10px;
+    margin-left: 40px;
     text-decoration: none;
     color: aliceblue;
 }
@@ -71,80 +37,116 @@ nav.before .active-element {
 #head-right ul {
     display: flex;
     list-style: none;
+    margin-right: 100px;
 
 }
 
-#head-right ul li button {
+#right-icon li button {
     background-color: #07f468;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 3px solid #07f468;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
 }
 
 #head-right ul li :hover {
-    background-color: whitesmoke;
+    background-color: #fff;
 }
-
 #head-right ul li button a {
-    border: 20%;
+    background-color: transparent;
     text-decoration: none;
-    color: #000000;
+    color: #07f468;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    align-items: center;
+}
+#logo {
+    width: 100%;
+    margin-left: 30px;
+}
+/* header */
 
+
+/* event */
+#st-events {
+    background: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-events.jpg);
+}
+.st-events__title h2{
+    margin-top: 1;
+}
+.st-events__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.4em;
+    position: relative;
+    margin-left: 340px;
+    margin-right: 340px;
+    margin-bottom: 10px;
+    color: #010101;
+    text-transform: uppercase;
+}
+.st-events__item--name {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    color: #141c31;
+}
+/* event */
+
+
+/* news */
+#news {
+    background-image: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-news.jpg);
+    width: 100%;
 }
 
+.st-news__title {
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 2.0em;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* news */
 
+
+/* footer */
 #footer {
     color: aliceblue;
     background-color: #000000;
-    display: flex;
+
     justify-content: space-between;
     margin: auto;
-    height: 50%;
-}
-
-#u-footer {
-    background-color: #000000;
-}
-
-#us {
-    width: 30%;
-
+    height: 100%;
+    text-align: center;
 
 }
 
-
-#us ul {
-    list-style: none;
-    display: flex;
-    margin-top: 30px;
-
-}
-
-#us ul li {
-    margin-left: 30px;
-
-}
-
-#us ul li i {
-    font-size: 30px;
-}
-
-#contast ul li {
-    list-style-type: none;
+#footer-img img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    vertical-align: middle;
     margin-top: 20px;
+
 }
 
-#contast ul li a i {
-    font-size: 30px;
-    margin: 10px;
-    color: turquoise;
+#footer-content {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 25px;
+    font-family: "CruyffSansVN", sans-serif;
+    text-transform: uppercase;
 }
+/* footer */
 
-#map {
-    margin: 30px;
-}
 
-body {
-    font-family: Verdana, sans-serif;
-    margin: 0
-}
 
 .mySlides {
     display: none
@@ -170,12 +172,13 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: lime;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 10px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 100px;
     user-select: none;
+    border: black solid px ;
 }
 
 /* Position the "next button" to the right */
@@ -191,15 +194,7 @@ img {
 }
 
 /* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
+
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -253,9 +248,7 @@ img {
     }
 }
 
-#logo {
-    width: 100%;
-}
+
 
 .player-list-table {
     display: flex;
@@ -269,33 +262,7 @@ img {
 /* slide */
 
 
-#sk-1 ul {
-    list-style: none;
-    display: flex;
-}
 
-#sk-1 ul li {
-    margin-left: 20px;
-}
-
-#sk-1 ul li button a {
-    text-decoration: none;
-}
-
-hr {
-    width: 90%;
-    margin-right: 100px;
-}
-
-#im img {
-    width: 104px;
-    height: 58px;
-    margin-right: 10px;
-}
-
-#im {
-    margin-left: 20px;
-}
 
 /* .slider {
     scroll-snap-type: x mandatory;  
