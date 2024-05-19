@@ -9,6 +9,7 @@ nav ul {
 nav.before .active-element {
     transform: rotateY(180deg);
 }
+
 /* header */
 #header {
     background-color: #000000;
@@ -20,6 +21,7 @@ nav.before .active-element {
     margin-right: auto;
     display: flex;
 }
+
 #left-icon,
 #right-icon {
     display: flex;
@@ -41,31 +43,23 @@ nav.before .active-element {
 
 }
 
-#right-icon li button {
-    background-color: #07f468;
+#right-icon button {
     margin-right: 10px;
     background-color: transparent;
     border: 3px solid #07f468;
     border-radius: 20px;
     width: 150px;
     height: 35px;
-}
-
-#head-right ul li :hover {
-    background-color: #fff;
-}
-#head-right ul li button a {
-    background-color: transparent;
-    text-decoration: none;
-    color: #07f468;
     font-family: Verdana, sans-serif;
     font-size: 16px;
-    align-items: center;
+    color: #07f468;
 }
+
 #logo {
     width: 100%;
     margin-left: 30px;
 }
+
 /* header */
 
 
@@ -73,9 +67,11 @@ nav.before .active-element {
 #st-events {
     background: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-events.jpg);
 }
-.st-events__title h2{
+
+.st-events__title h2 {
     margin-top: 1;
 }
+
 .st-events__title {
     text-align: center;
     font-size: 50px;
@@ -88,6 +84,7 @@ nav.before .active-element {
     color: #010101;
     text-transform: uppercase;
 }
+
 .st-events__item--name {
     font-size: 25px;
     font-weight: 700;
@@ -95,6 +92,7 @@ nav.before .active-element {
     text-transform: uppercase;
     color: #141c31;
 }
+
 /* event */
 
 
@@ -105,7 +103,7 @@ nav.before .active-element {
 }
 
 .st-news__title {
-    
+
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -113,6 +111,7 @@ nav.before .active-element {
     color: #fff;
     text-transform: uppercase;
 }
+
 /* news */
 
 
@@ -144,6 +143,7 @@ nav.before .active-element {
     font-family: "CruyffSansVN", sans-serif;
     text-transform: uppercase;
 }
+
 /* footer */
 
 
@@ -178,14 +178,10 @@ img {
     transition: 0.6s ease;
     border-radius: 100px;
     user-select: none;
-    border: black solid px ;
+    border: black solid px;
 }
 
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
+
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -329,7 +325,18 @@ img {
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 50%;
+    border: #07f468 3px solid;
+    background-color: #000000;
+    color: #07f468;
+}
+
+.prev {
+    left: 0;
+    border-radius: 50%;
+    border: #07f468 6px solid;
+    background-color: #000000;
+    color: #07f468;
 }
 
 /* On hover, add a black background color with a little bit see-through */
