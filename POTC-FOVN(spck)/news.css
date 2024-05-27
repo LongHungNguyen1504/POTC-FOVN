@@ -38,15 +38,22 @@
 }
 #hlv{
 
-    background-color: black;
+    margin-top: 20px;
     display: flex;
 }
 #mot{
     margin-left: 100px;
 }
-#mot h2{
+#mot img{
+    margin-left: 100px
+}
+#mot h3{
     color: white;
-    margin-left: 5px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+#mot p{
+    color: aliceblue;
 }
 #hlv-1{
     width: 50%;
@@ -89,7 +96,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('./images/bg.jpg');
+   
     animation: scale 8s infinite linear;
     display: flex;
 }
@@ -119,12 +126,38 @@
   }
   
 }
-#vs{
 
-}
 #taycam{
     position: absolute;
     right: 4.6875vw;
     top: 1.5625vw;
     width: 22.0833333333vw;
+}
+#title button{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+#hai button a{
+    text-decoration: none;
+    width: 100%;
+}
+#vid{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./images/bg-news-banner.jpg');
+    margin-top: 100px;
+    justify-content: space-evenly;
+    
+}
+.card{
+    margin-left: 10px;
+}
+#chua{
+    background-image: url('./images/bg-news-banner.jpg');
+    height: fit-content;
 }

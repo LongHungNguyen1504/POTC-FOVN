@@ -1,22 +1,20 @@
-let listPlayerHtml = document.querySelector('.cauthu')
-const addDataToHtml = (cauthu) => {
-  listPlayerHtml.innerHtml = ''
-  if (cauthu.length > 0) {
-    cauthu.forEach(player => {
+let listPlayerHtml = document.querySelector('.tong')
+const addDataToHtml = (tong) => {
+  if (tong.length > 0) {
+    tong.forEach(player => {
       let newPlayers = document.createElement('div');
       newPlayers.classList.add('cauthu');
       newPlayers.innerHTML = `
-      <div id="cauthu">
 
       <div id="anh">
-        <span>${player.vitri}/span>
+        <span>${player.vitri}</span>
         <img src="${player.img}" alt="">
       </div>
       <div id="name">
         <div id="name-left">
           <div id="nem">
             <img src="" alt="">
-            <a href="">Pele</a>
+            <a class="nem1" href="player.html?id=${player.id}">${player.name}</a>
           </div>
           <div id="chiso">
             <span>
@@ -46,7 +44,6 @@ const addDataToHtml = (cauthu) => {
         </div>
       </div>
     </div>
-    </div>
       `;
       listPlayerHtml.appendChild(newPlayers)
     })
@@ -62,3 +59,18 @@ const initApp = () => {
     })
 }
 initApp();
+function searchPlayer(){
+  let search_player = document.getElementById("in4cauthu").value;
+  search_player = search_player.toUpperCase();
+  let name = document.getElementsByClassName("nem1");
+  let player = document.getElementsByClassName("tong")
+  for(let i=0; i < player.length; i++){
+    if(name[i].innerText.includes(search_player)){
+      player[i].style.display ='block'
+    }
+    else{
+      player[i].style.display ='none'
+    }
+  }
+    
+}

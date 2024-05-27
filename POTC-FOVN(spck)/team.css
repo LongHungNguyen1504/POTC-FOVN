@@ -1,24 +1,43 @@
-#team{
+#SSS{
     display: flex;
-   justify-content: space-around;
-   color: #777768;
-}
-#chuyen, #sut, #rebong, #theluc, #phongthu{
-    margin-left: 20px;
-}
-#chiso1{
-    list-style: none;
-    column-count: 4;
-    width: 85%;
-    text-align: center;
-    color: #777768;
-}
-#chiso1 li{
-    margin-top: 5px;
-}
-#tong1{
+    margin-left: auto;
+   
     width: 70%;
-    text-align: center;
-    margin: auto;
-    background-color: #111111;
+}
+#SSS1{
+margin-right: 10px;
+
+}
+#SSS1 img{
+    width: 86px;
+    height: auto;
+}
+#SSS2 img{
+    width: 442px;
+    height: auto;    
+}
+#varane img{
+    width: 34px;
+    height: 54px;
+}
+#varane{
+    position: relative;
+    display: inline-block;
+}
+#player{
+    position: absolute;
+    left: 510px;
+    z-index: 2;
+    transform: translateY(-50%);
+    top: 50px;
+}
+#img img{
+    width: 22px;
+    height: 22px;
+}
+#img{
+    position: absolute;
+    height: 100%;
+    top: 16px;
+    left: 10px;
 }

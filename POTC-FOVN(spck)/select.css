@@ -1,9 +1,13 @@
 #anh img{
     width: 50px;
     
+    
+}
+#anh{
+    width: 90px;
 }
 .cauthu{
-    display: flex;
+ display: flex;
     background-color: #1a242a
 }
 #name{
@@ -48,6 +52,10 @@
 }
 #top li{
     margin-left: 10px;
+}
+.nem1{
+    text-decoration: none;
+    color: aliceblue;
 }
 /* #nem a{
     text-decoration: none;
