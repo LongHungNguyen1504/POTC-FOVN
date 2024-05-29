@@ -10,6 +10,7 @@ signupForm.addEventListener('submit', (event) => {
     let email = formData.get('email')
     let phone = formData.get('phone')
     let password = formData.get('password')
+    let password1 = formData.get('password1')
 
     if (!isValidUsername(username)) {
         Swal.fire({
@@ -43,16 +44,15 @@ signupForm.addEventListener('submit', (event) => {
             confirmButtonText: 'OK'
         })
         return
-    } else if (!isValidPassword1(password1)) {
+    } else if (!isValidPassword1(password1, password)) {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Password do not match",
-            footer: '<a href="#">Why do I have this issue?</a>'
-        })
-        return
+            text: "Mật khẩu không khớp",
+            footer: '<a href="#">Tại sao tôi gặp vấn đề này?</a>'
+        });
+        return;
     }
-
 
     Swal.fire({
         title: 'Success!',
@@ -89,6 +89,19 @@ function isValidEmail(email) {
 // Yêu cầu: Số điện thoại phải luôn bắt đầu bằng +84
 function isValidPhone(phone) {
     const phoneRegex = /^(\+84)\d+$/;
+  
+    // Kiểm tra xem số điện thoại đã bắt đầu bằng "+84" chưa
+    if (!phone.startsWith("+84")) {
+        // Kiểm tra xem số điện thoại đã bắt đầu bằng "0" chưa
+        if (phone.startsWith("0")) {
+            // Ghi sẵn số "+84" vào đầu số điện thoại
+            phone = "+84" + phone.substring(1);
+        } else {
+            // Ghi sẵn số "+84" vào đầu số điện thoại
+            phone = "+84" + phone;
+        }
+    }
+
     return phoneRegex.test(phone);
 }
 
@@ -99,12 +112,13 @@ function isValidPassword(password) {
     return regex.test(password);
 }
 
-
-function isValidPassword1(password) {
-    if (password == password1)
-        return true
-
+function isValidPassword1(password1, password) {
+    if (password1 === password) {
+        return true;
+    }
+    return false;
 }
+<<<<<<< HEAD
 
 const signup_form = document.querySelector("#signup-form")
 signup_form.addEventListener("submit", (e) => {
@@ -123,3 +137,5 @@ signup_form.addEventListener("submit", (e) => {
         }
     )
 })
+=======
+>>>>>>> Hung

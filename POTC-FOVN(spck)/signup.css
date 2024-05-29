@@ -1,42 +1,185 @@
-html,
 body {
-    width: 100%;
-    height: 100%;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    background-image: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-events.jpg);
 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 40px;
+}
+
+nav.before .active-element {
+    transform: rotateY(180deg);
+}
+
+/* header */
+
+#header {
+    background-color: #000000;
+    display: flex;
     align-items: center;
+    margin-bottom: 100px;
+}
+
+#head-left {
+    margin-right: auto;
+    display: flex;
+}
+
+#left-icon,
+#right-icon {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+#left-icon li a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#head-right ul {
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+
+}
+
+#right-icon button {
+    margin-right: 10px;
+    background-color: transparent;
+    border: 3px solid #07f468;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: #07f468;
+    text-transform: uppercase;
+}
+
+#ri-btn:hover {
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+
+#logo {
+    width: 100%;
+    margin-left: 30px;
+}
+
+/* header */
+
+
+/* signup */
+#signup-form {
+    margin-left: 345px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 0.1px;
 }
 
 .form-container {
-    width: 95%;
     height: auto;
-    padding: 1.5%;
+    
+    border-radius: 50px;
+    background-image: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-news-banner.jpg);
+    width: 800px;
+}
 
-    border-radius: 10px;
-
+.form-container h1 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: -50px;
 }
 
 .form-container input {
-    margin: 10px 0;
-
+    margin: 20px;
+    background-color: transparent;
+    display: flex;
+    width: 500px;
+    height: 30px;
+    margin-left: -245px;
+    border: #07f468 3px solid;
+    border-radius: 10px;
+    color: #fff;
 }
 
 .form-container input::placeholder {
-    color: grey;
+    color: #fff;
+    font-family: Verdana, sans-serif;
 }
 
 .form-container button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: #383838;
-    color: antiquewhite;
-    border-radius: 5px;
+    margin-left: -100px;
+    background-color: #07f468;
+    color: #fff;
+    border-radius: 5px ;
     font-size: 23px;
+    border: #000000 3px solid;
+   padding-left: 30px;
+   padding-top: 2px;
+    align-items: center;
+    padding-bottom: 2px;
+    padding-right: 30px;
+}
+.form-container button:hover{
+    color: #000000;
+    transition: 0.7s ;
+}
+.form-container h6 {
+    font-size: 13px;
+    color: #fff;
+    margin-left: -140px;
+}
+.form-container h6 a{
+    font-size: 13px;
+    color: red;
+    text-decoration: none;
+}
+.form-container h6 a:hover{
+    transition: 0.5s;
+    color: #07f468;
+}
+/* footer */
+#footer {
+    color: aliceblue;
+    background-color: #000000;
+    justify-content: space-between;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+
 }
 
-#signup-form label {
-    display: none;
+#footer-img img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+
 }
+
+#footer-content {
+    color: #fff;
+    font-weight: 300;
+    font-family: "CruyffSansVN", sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+/* footer */
