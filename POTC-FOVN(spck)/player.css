@@ -37,7 +37,12 @@
     margin-left: 5px;
 }
 #vitri b{
- color: red;
+    font-size: 25px;
+ color: #aaa;
+}
+#vitri i{
+    font-size: 25px;
+    color: #aaa;
 }
 #mua a img{
     width: 26px;
@@ -64,6 +69,7 @@
     width: 85%;
     text-align: center;
     color: #777768;
+    padding: 10px;
 }
 #chiso1 li{
     margin-top: 5px;

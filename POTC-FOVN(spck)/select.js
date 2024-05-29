@@ -1,98 +1,76 @@
-const filePath = 'select.json';
+let listPlayerHtml = document.querySelector('.tong')
+const addDataToHtml = (tong) => {
+  if (tong.length > 0) {
+    tong.forEach(player => {
+      let newPlayers = document.createElement('div');
+      newPlayers.classList.add('cauthu');
+      newPlayers.innerHTML = `
 
-function activeSlide() {
+      <div id="anh">
+        <span>${player.vitri}</span>
+        <img src="${player.img}" alt="">
+      </div>
+      <div id="name">
+        <div id="name-left">
+          <div id="nem">
+            <img src="" alt="">
+            <a class="nem1" href="player.html?id=${player.id}">${player.name}</a>
+          </div>
+          <div id="chiso">
+            <span>
+              <b>${player.vitri}</b>
+              <i>${player.chiso}</i>
+            </span>
+            <span>
+              <b>${player.vitriphu}</b>
+              <i>${player.chisophu}</i>
+            </span>
 
-    //service section owl carousel
-    $("cauthu").owlCarousel({
-        autoplay: true,
-        loop: true,
-        margin: 20,
-        autoHeight: true,
-        nav: true,
-        navText: [
-            '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>',
-            '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>',
-        ],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            576: {
-                items: 2,
-            },
-            768: {
-                items: 3,
-            },
-            991: {
-                items: 4,
-            },
-        },
-    });
-}
-let titlearea = document.getElementById('tong')
-function createItemElement(itemData) {
-    itemData && itemData.map((item) => {
-        let itemTemplate = `  
-        <div id="cauthu" style="display : flex;  background-color: #1a242a">
-
-        <div id="anh">
-          <span style="white">${item.vitri}</span>
-          <img src="${item.img} "style="width : 50px" alt="">
-        </div>
-        <div id="name" style="width : 40%">
-          <div id="name-left" style="width : 100%">
-            <div id="nem">
-              <img src="" alt="">
-              <a href="" style="text-decoration: none; color: white">${item.name}</a>
-            </div>
-            <div id="chiso">
-              <span>
-                <b style=" font-weight: 300px;
-                color: white;
-                background-color: red">${item.vitri}</b>
-                <i style=" color: white">${item.chiso}</i>
-              </span>
-              <span>
-                <b style=" font-weight: 300px;
-                color: white;
-                background-color: red">${item.vitriphu}</b>
-                <i style=" color: white">${item.chisophu}</i>
-              </span>
-  
-            </div>
-          </div>
-        </div>
-        <div id="name-right" style="margin-top: auto;
-        margin-bottom: auto">
-          <img src="./images/icons.png" style="width : 25px" alt="">
-        </div>
-        <div id="so">
-          <div id="luong" >
-            <b style="color: white;">${item.luong}</b>
-          </div>
-          <div id="ovr">
-            <b style="color: white;">${item.ovr}</b>
-          </div>
-          <div id="sta">
-            <b style="color: white;">${item.sta}</b>
           </div>
         </div>
       </div>
+      <div id="name-right">
+        <img src="./images/icons.png" alt="">
       </div>
-        `;
-        titlearea.innerHTML += itemTemplate;
-    });
+      <div id="so">
+        <div id="luong">
+          <b>${player.luong}</b>
+        </div>
+        <div id="ovr">
+          <b>${player.chiso}</b>
+        </div>
+        <div id="sta">
+          <b>${player.sta}</b>
+        </div>
+      </div>
+    </div>
+      `;
+      listPlayerHtml.appendChild(newPlayers)
+    })
+  }
 }
-init()
 
-function init() {
-    getPlayerAPI()
+const initApp = () => {
+  fetch('select.json')
+    .then(response => response.json())
+    .then(data => {
+      listPlayers = data;
+      addDataToHtml(listPlayers);
+    })
 }
-
-async function getPlayerAPI() {
-    let data = await fetch(filePath)
-        .then(response => response.json()) // lấy dữ liệu từ fetch('link j đó)lưu vào data
-        .then(json => json)//chuyển response thành json sau đó đổi thành array/object và lưu vào biến data
-    console.log(data)
-    createItemElement(data)
+initApp();
+function searchPlayer(){
+  let search_player = document.getElementById("in4cauthu").value;
+  search_player = search_player.toUpperCase();
+  let name = document.getElementsByClassName("nem1");
+  let player = document.getElementsByClassName("tong")
+  for(let i=0; i < player.length; i++){
+    if(name[i].innerText.includes(search_player)){
+      player[i].style.display ='block'
+    }
+    else{
+      player[i].style.display ='none'
+    }
+  }
+    
 }

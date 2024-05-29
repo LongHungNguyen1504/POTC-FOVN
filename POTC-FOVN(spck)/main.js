@@ -7,7 +7,7 @@ const filePath = 'data.json';
 
 function activeSlide() {
 
-    //service section owl carousel
+   
     $("m-post").owlCarousel({
         autoplay: true,
         loop: true,
