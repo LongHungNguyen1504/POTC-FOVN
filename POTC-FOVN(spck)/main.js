@@ -1,3 +1,8 @@
+var elem = document.querySelector('.collapsible');
+var instance = M.Collapsible.init(elem, {
+    accordion: true
+});
+
 const filePath = 'data.json';
 
 function activeSlide() {
@@ -63,3 +68,8 @@ async function getPlayerAPI() {
     console.log(data)
     createItemElement(data)
 }
+
+var elem = document.querySelector('.collapsible');
+var instance = M.Collapsible.init(elem, {
+    accordion: true
+});
