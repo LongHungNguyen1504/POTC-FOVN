@@ -34,7 +34,7 @@ margin-right: 10px;
     left: 510px;
     z-index: 2;
     transform: translateY(-50%);
-    top: 50px;
+    top: 160px;
 }
 #img img, #img1 img, #img2 img{
     width: 22px;
@@ -49,14 +49,14 @@ margin-right: 10px;
 #player1{
     position: absolute;
     left: 510px;
-    top: 140px;
+    top: 250px;
     z-index: 2;
     transform: translateY(-50%);
 }
 #player2{
     position: absolute;
     left: 510px;
-    top: 230px;
+    top: 340px;
     transform: translateY(-50%);
 }
 @media(max-width:992px) {
@@ -65,4 +65,7 @@ margin-right: 10px;
         background-color: aqua;
     }
     
+}
+#SSS-container{
+    margin-top: 50px;
 }
