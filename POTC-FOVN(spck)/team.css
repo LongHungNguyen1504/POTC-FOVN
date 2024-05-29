@@ -59,4 +59,10 @@ margin-right: 10px;
     top: 230px;
     transform: translateY(-50%);
 }
-
+@media(max-width:992px) {
+    body{
+        min-height: auto;
+        background-color: aqua;
+    }
+    
+}

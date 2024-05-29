@@ -4,7 +4,7 @@ async function fetchAndDisplaySingleProduct() {
   const response = await fetch(`player.json`);
   const player = await response.json();
   const selectPlayer = player.filter(item => item.id == playerId)
-  console.log('thinh___', selectPlayer)
+  
   displayPlayer(selectPlayer[0]);
 }
 function displayPlayer(player) {
