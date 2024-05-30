@@ -96,6 +96,12 @@ nav.before .active-element {
     color: #010101;
     text-transform: uppercase;
 }
+@media (max-width:420px){
+    .st-events__title{
+        font-size: 10px;
+        margin-right: 100px;
+    }
+}
 
 .st-events__item--name {
     font-size: 25px;
