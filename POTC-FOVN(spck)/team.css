@@ -48,25 +48,15 @@ margin-right: 10px;
 }
 #player1{
     position: absolute;
-<<<<<<< HEAD
-    left: 590px;
-    top: 140px;
-=======
     left: 510px;
     top: 250px;
->>>>>>> c5ba5c353e9efe0e2fbebcf12a557b20d3209895
     z-index: 2;
     transform: translateY(-50%);
 }
 #player2{
     position: absolute;
-<<<<<<< HEAD
-    left: 590px;
-    top: 230px;
-=======
     left: 510px;
     top: 340px;
->>>>>>> c5ba5c353e9efe0e2fbebcf12a557b20d3209895
     transform: translateY(-50%);
 }
 @media(max-width:992px) {

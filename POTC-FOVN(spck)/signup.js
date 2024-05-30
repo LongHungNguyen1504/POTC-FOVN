@@ -89,7 +89,7 @@ function isValidEmail(email) {
 // Yêu cầu: Số điện thoại phải luôn bắt đầu bằng +84
 function isValidPhone(phone) {
     const phoneRegex = /^(\+84)\d+$/;
-  
+
     // Kiểm tra xem số điện thoại đã bắt đầu bằng "+84" chưa
     if (!phone.startsWith("+84")) {
         // Kiểm tra xem số điện thoại đã bắt đầu bằng "0" chưa
@@ -118,3 +118,22 @@ function isValidPassword1(password1, password) {
     }
     return false;
 }
+
+
+const signup_form = document.querySelector("#signup-form")
+signup_form.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    const username = signup_form['username'].value
+    const email = signup_form['email'].value
+    const password = signup_form['password'].value
+    // console.log(username, email, password)
+
+    auth.createUserWithEmailAndPassword(email, password).then(
+        (cred) => {
+            alert("Sign up successfully!")
+            console.log(cred)
+            signup_form.reset()
+        }
+    )
+})
