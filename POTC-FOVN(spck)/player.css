@@ -24,6 +24,16 @@
     display: flex;
   
 } */
+#tien b{
+    color: red;
+}
+#mid{
+    margin-top: 20px;
+}
+#left{
+    width: 50%;
+    margin-left: 20px;
+}
 #tong{
     display: flex;
     width: 70%;
@@ -32,6 +42,8 @@
 }
 #in4{
  width: 100%;
+ display: flex;
+
 }
 #vitri{
     margin-left: 5px;
@@ -79,4 +91,10 @@
     text-align: center;
     margin: auto;
     background-color: #111111;
+}
+#imgs{
+    margin-right: 20px;
+}
+#vitri{
+    margin-bottom: 10px;
 }
