@@ -180,7 +180,33 @@ nav.before .active-element {
     border-top: none;
 }
 
-/* nenws */
+#m-post {
+    background-color: black;
+    width: 326px;
+    margin-bottom: 10px;
+}
+
+#poster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-news-list.jpg);
+    position: relative;
+    top: -16px;
+    padding-top: 20px;
+}
+
+#img-title {
+    transition: transform .2s;
+    /* Animation */
+}
+
+#img-title:hover {
+    transform: scale(1.1);
+}
+
+/* news */
+
 
 
 /* footer */

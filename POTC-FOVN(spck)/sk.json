@@ -31,17 +31,17 @@
     },
     {
         "id":5,
-        "image":"./images/toty.png",
+"image":"./images/toty.png",
         "date":"20/01/2024",
-        "title":"Công Bố Đội Hình Chính Thức 24TOTY",
-        "text":""
+        "title":"[24TOTY] Công Bố Đội Hình Chính Thức 24TOTY",
+        "text":"Giải thưởng Team of the Year đã chính thức trở lại, đây là thời khắc để vinh danh những cầu thủ xuất sắc nhất thế giới trong năm 2023. 85 ứng cử viên, 18 giải thưởng Team of the Year, 12 cầu thủ tiêu biểu, 6 cầu thủ danh dự, hãy đưa ra bình chọn của bạn."
     },
     {
         "id":6,
         "image":"./images/hero.png",
         "date":"18/01/2024",
         "title":"[Mùa Thẻ Mới] 24 Heroes: Tập Hợp Siêu Anh Hùng – Chinh Phục Mọi Đỉnh Cao",
-        "text":"Siêu Anh Hùng là những nhân vật phi thường, sở hữu năng lực siêu nhiên. Gánh trên vai một trọng trách vô cùng to lớn, họ không chỉ là những chiến binh, mà còn là biểu tượng của lòng can đảm nhờ ý chí kiên cường và bất khuất. Tưởng chừng như áo choàng bay chỉ có ở trong truyện tranh nhưng không, thế giới vẫn luôn tồn tại những siêu anh hùng.Làng túc cầu chính là nơi đã sản sinh ra rất nhiều siêu anh hùng, họ là những cá nhân luôn tỏa sáng vào những thời khắc mà đội bóng gặp bế tắc ở những trận cầu nghẹt thở. Bằng tài năng cùng tinh thần chiến đấu không bao giờ bỏ cuộc, họ đã vực dậy tinh thần đội bóng và giành lấy những chiến thắng không tưởng.Khoảnh khắc ấy luôn khắc ghi trong tâm trí của người hâm mộ, họ không chỉ là những huyền thoại bóng đá mà còn là những người Hùng của đội bóng."
+        "text":"Siêu Anh Hùng là những nhân vật phi thường, sở hữu năng lực siêu nhiên. Gánh trên vai một trọng trách vô cùng to lớn, họ không chỉ là những chiến binh, mà còn là biểu tượng của lòng can đảm nhờ ý chí kiên cường và bất khuất. Tưởng chừng như áo choàng bay chỉ có ở trong truyện tranh nhưng không, thế giới vẫn luôn tồn tại những siêu anh hùng.Làng túc cầu chính là nơi đã sản sinh ra rất nhiều siêu anh hùng, họ là những cá nhân luôn tỏa sáng vào những thời khắc mà đội bóng gặp bế tắc ở những trận cầu nghẹt thở."
     },
     {
         "id":7,
@@ -62,8 +62,8 @@
         "id":9,
         "image":"./images/totynew.jpg",
         "date":"08/01/2024",
-        "title":"Công Bố Danh Sách 85 Ứng Cử Viên 24 Team Of The Year",
-        "text":"Giải thưởng Team of the Year đã chính thức trở lại trong năm 2024. 85 ứng cử viên, 18 giải thưởng Team of the Year, 12 cầu thủ tiêu biểu, 6 cầu thủ danh dự, hãy đưa ra bình chọn của bạn.Team of the Year 24 (24TOTY) bao gồm những cầu thủ có thành tích tốt nhất vào năm 2023, 12 cầu thủ được bình chọn nhiều nhất trên toàn thế giới sẽ giành được giải thưởng TOTY và sẽ xuất hiện trong mùa thẻ đặc biệt 24TOTY với bộ chỉ số vượt trội nhằm tôn vinh vị thế của một trong những cầu thủ bóng đá hàng đầu thế giới.Đặc biệt ở cuộc bình chọn 24TOTY năm nay, sẽ có thêm 6 giải thưởng Honorable Mentions dành cho 6 ứng cử viên được bình chọn nhiều nhất nhưng không lọt vào danh sách XI. 6 cầu thủ này cũng sẽ có riêng mùa thẻ 24TOTY trong FC Online và sẽ khác nhau tại mỗi khu vực."
+        "title":"[24TOTY] Công Bố Danh Sách 85 Ứng Cử Viên 24 Team Of The Year",
+"text":"Giải thưởng Team of the Year đã chính thức trở lại trong năm 2024. 85 ứng cử viên, 18 giải thưởng Team of the Year, 12 cầu thủ tiêu biểu, 6 cầu thủ danh dự, hãy đưa ra bình chọn của bạn.Team of the Year 24 (24TOTY) bao gồm những cầu thủ có thành tích tốt nhất vào năm 2023, 12 cầu thủ được bình chọn nhiều nhất trên toàn thế giới sẽ giành được giải thưởng TOTY và sẽ xuất hiện trong mùa thẻ đặc biệt 24TOTY với bộ chỉ số vượt trội nhằm tôn vinh vị thế của một trong những cầu thủ bóng đá hàng đầu thế giới.Đặc biệt ở cuộc bình chọn 24TOTY năm nay, sẽ có thêm 6 giải thưởng Honorable Mentions dành cho 6 ứng cử viên được bình chọn nhiều nhất nhưng không lọt vào danh sách XI."
     },
     {
         "id":10,
@@ -84,6 +84,6 @@
         "image":"./images/kaka.png",
         "date":"28/11/2023",
         "title":"[New ICON TM] Sự Thăng Hoa Của Bộ Tứ Huyền Thoại Serie A – Kaká, Zola, Nesta và Pirlo",
-        "text":"Chào đón sự xuất hiện của 4 ICON TM vào cuối tháng 11, hứa hẹn sẽ tái hiện lại khoảnh khắc thi đấu đầy thăng hoa của những Ricardo Kaká, Gianfranco Zola, Alessandro Nesta hay Andrea Pirlo tại FC Online.ICON The Moment là mùa thẻ đẳng cấp nhất của những huyền thoại và được lấy cảm hứng từ những khoảnh khắc thi đấu thăng hoa nhất trong sự nghiệp của các cầu thủ. Hãy cùng khám phá bộ tứ huyền thoại lần này có gì đặc biệt nhé!"
+"text":"Chào đón sự xuất hiện của 4 ICON TM vào cuối tháng 11, hứa hẹn sẽ tái hiện lại khoảnh khắc thi đấu đầy thăng hoa của những Ricardo Kaká, Gianfranco Zola, Alessandro Nesta hay Andrea Pirlo tại FC Online.ICON The Moment là mùa thẻ đẳng cấp nhất của những huyền thoại và được lấy cảm hứng từ những khoảnh khắc thi đấu thăng hoa nhất trong sự nghiệp của các cầu thủ. Hãy cùng khám phá bộ tứ huyền thoại lần này có gì đặc biệt nhé!"
      }
 ]

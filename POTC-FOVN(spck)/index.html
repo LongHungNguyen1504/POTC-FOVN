@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <link rel="icon" href="images/favicon.png" type="image/gif" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="silder.css">
 </head>
@@ -19,7 +19,7 @@
             <ul id="left-icon">
                 <li><a href="index.html">TRANG CHỦ </a></li>
                 <li><a href="cauthu.html">CẦU THỦ </a></li>
-                <li><a href="sk.html">SỰ KIỆN</a></li>
+                <li><a href="sk.html">TIN TỨC</a></li>
                 <li><a href="">HƯỚNG DẪN CÁCH CHƠI</a></li>
 
             </ul>
@@ -94,12 +94,35 @@
                 <button class="tablinks" onclick="openCity(event, 'dn')">Dev Notes</button>
             </div>
             <div id="sk" class="tabcontent">
-
+                <div id="m-post" style="width : 326px; background-color : black;">
+                    <img id="img-title" src="${item.image}" alt="">
+    
+                    <div class="p-title">
+                        <h6 style="font-size : 15px; color : white; margin : 10px;">${item.title}</h6>
+    
+                    </div>
+                    <div>
+                        <p style="color : white; font-size : 11px; margin : 10px;">
+                        ${item.text}
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div id="vp" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
+                <div id="m-post" style="width : 326px; background-color : black;">
+                    <img id="img-title" src="${item.image}" alt="">
+    
+                    <div class="p-title">
+                        <h6 style="font-size : 15px; color : white; margin : 10px;">${item.title}</h6>
+    
+                    </div>
+                    <div>
+                        <p style="color : white; font-size : 11px; margin : 10px;">
+                        ${item.text}
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div id="gd" class="tabcontent">
