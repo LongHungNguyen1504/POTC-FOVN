@@ -36,7 +36,7 @@
         "ovr":115,
         "nuoc":"BRAZIL",
         "img":"./images/pele.png",
-        "gia":"$100000000"
+        "gia":"670000000BP"
         
     },
     {
@@ -76,7 +76,7 @@
         "ovr":115,
         "nuoc":"HOLLAND",
         "img":"./images/johan.png",
-        "gia":"$68000000"
+        "gia":"68000000BP"
     },
     {
         "id" : 3,
@@ -115,7 +115,7 @@
         "ovr":114,
         "nuoc":"FRANCE",
         "img":"./images/zidane.png",
-        "gia":""
+        "gia":"75000000BP"
     },
     {
         "id" : 4,
@@ -153,7 +153,9 @@
         "vitri":"CAM",
         "ovr":114,
         "nuoc":"HOLLAND",
-        "img":"./images/basten.png"
+        "img":"./images/basten.png",
+        "gia":"800000000BP"
+        
     },
     {
         "id" : 5,
@@ -191,7 +193,8 @@
         "vitri":"ST",
         "ovr":114,
         "nuoc":"BRAZIL",
-        "img":"./images/robeo.png"
+        "img":"./images/robeo.png",
+        "gia":"850000000BP"
     },
     {
         "id" : 6,
@@ -229,7 +232,8 @@
         "vitri":"CM",
         "ovr":114,
         "nuoc":"GERMANY",
-        "img":"./images/mathu.png"
+        "img":"./images/mathu.png",
+        "gia":"500000000BP"
     },
     {
         "id" : 7,
@@ -267,7 +271,9 @@
         "vitri":"CF",
         "ovr":113,
         "nuoc":"HOLLAND",
-        "img":"./images/gu.png"
+        "img":"./images/gu.png",
+        "gia":"4000000000BP"
+
     },
     {
         "id" : 8,
@@ -305,7 +311,9 @@
         "vitri":"ST",
         "ovr":112,
         "nuoc":"FRANCE",
-        "img":"./images/henry.png"
+        "img":"./images/henry.png",
+        "gia":"1000000000BP"
+
     },
     {
         "id" : 9,
@@ -343,7 +351,8 @@
         "vitri":"RM",
         "ovr":112,
         "nuoc":"ENGLAND",
-        "img":"./images/beck.png"
+        "img":"./images/beck.png",
+        "gia":"2000000000BP"
     },
     {
         "id" : 10,
@@ -381,7 +390,8 @@
         "vitri":"CAM",
         "ovr":112,
         "nuoc":"BRAZIL",
-        "img":"./images/kaka1.png"
+        "img":"./images/kaka1.png",
+        "gia":"1500000000BP"
     },
     {
         "id" : 11,
@@ -419,7 +429,8 @@
         "vitri":"ST",
         "ovr":112,
         "nuoc":"CAMEROON",
-        "img":"./images/eto.png"
+        "img":"./images/eto.png",
+        "gia":"660000000BP"
     },
     {
         "id" : 12,
@@ -457,6 +468,7 @@
         "vitri":"CB",
         "ovr":113,
         "nuoc":"ITALY",
-        "img":"./images/ma.png"
+        "img":"./images/ma.png",
+        "gia":"900000000BP"
     }
 ]

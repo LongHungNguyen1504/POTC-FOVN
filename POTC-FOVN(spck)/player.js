@@ -34,7 +34,7 @@ function displayPlayer(player) {
             </div>
             <div id="tien">
               <b>
-                Giá tiền: <span>1000000000</span>
+                Giá tiền: <span>${player.gia}</span>
               </b>
              </div>
             </div>

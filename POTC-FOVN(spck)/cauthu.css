@@ -86,7 +86,7 @@ body {
 #row2{
     margin-left: 50px;
 }
-#in-row1 img, #in1-row1 img, #in2-row1 img{
+#in-row1 img, #in1-row1 img, #in2-row1 img, #in1-row2 img{
     width: 80px;
     height: 80px;
 }
@@ -123,5 +123,85 @@ body {
 #row1 div img:hover{
     background-image:url('./images/tải\ xuống\ \(3\).png') ;
 }
+#in1-row2{
+    position: absolute;
+    top: 510px;
+    left: 1030px;
+}
+#text1-row2{
+    position: absolute;
+    top: 500px;
+    left:870px ;
+}
+#SSS, #SS, #S{
+    display: flex;
+    margin-left: auto;
+   
+    width: 70%;
+}
+#SSS1, #SS1, #S1{
+margin-right: 10px;
 
+}
+#SSS1 img, #SS1 img, #S1 img{
+    width: 86px;
+    height: auto;
+}
+#SSS2 img, #SS2 img, #S2 img{
+    width: 442px;
+    height: auto;    
+}
+#varane img, #cauthu img, #cauthu1 img{
+    width: 34px;
+    height: 54px;
+}
+#varane,#cauthu,#cauthu1{
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    transition: transform .2s;
+}
+#varane :hover{
+    transform: scale(1.1);
+}
+#player{
+    position: absolute;
+    left: 510px;
+    z-index: 2;
+    transform: translateY(-50%);
+    top: 160px;
+}
+#img img, #img1 img, #img2 img{
+    width: 22px;
+    height: 22px;
+}
+#img, #img1, #img2{
+    position: absolute;
+    height: 100%;
+    top: 16px;
+    left: 10px;
+}
+#player1{
+    position: absolute;
+    left: 510px;
+    top: 250px;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+#player2{
+    position: absolute;
+    left: 510px;
+    top: 340px;
+    transform: translateY(-50%);
+}
+@media(max-width:992px) {
+    body{
+        min-height: auto;
+        background-color: aqua;
+    }
+    
+}
+#SSS-container{
+    margin-top: 50px;
+}
 /* header */
