@@ -31,7 +31,7 @@ margin-right: 10px;
 }
 #player{
     position: absolute;
-    left: 510px;
+    left: 590px;
     z-index: 2;
     transform: translateY(-50%);
     top: 50px;
@@ -48,14 +48,14 @@ margin-right: 10px;
 }
 #player1{
     position: absolute;
-    left: 510px;
+    left: 590px;
     top: 140px;
     z-index: 2;
     transform: translateY(-50%);
 }
 #player2{
     position: absolute;
-    left: 510px;
+    left: 590px;
     top: 230px;
     transform: translateY(-50%);
 }
