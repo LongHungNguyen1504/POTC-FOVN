@@ -73,5 +73,55 @@ body {
     width: 100%;
     margin-left: 30px;
 }
+#row{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 100px;
+}
+#row1{
+    margin-right: 50px;
+}
+#row2{
+    margin-left: 50px;
+}
+#in-row1 img, #in1-row1 img, #in2-row1 img{
+    width: 80px;
+    height: 80px;
+}
+#in-row1{
+    position: absolute;
+    top: 510px;
+    left: 210px;
+}
+#in1-row1{
+    position: absolute;
+    top: 640px;
+    left: 210px;
+}
+#in2-row1{
+    position: absolute;
+    top: 770px;
+    left: 210px;
+}
+#text-row1{
+    position: absolute;
+    top: 500px;
+    left: 320px;
+}
+#text1-row1{
+    position: absolute;
+    left: 320px;
+    top: 630px;
+}
+#text2-row1{
+    position: absolute;
+ top: 760px;
+ left: 320px;
+}
+#row1 div img:hover{
+    background-image:url('./images/tải\ xuống\ \(3\).png') ;
+}
 
 /* header */
