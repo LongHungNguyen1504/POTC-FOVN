@@ -118,7 +118,6 @@ function isValidPassword1(password1, password) {
     }
     return false;
 }
-<<<<<<< HEAD
 
 const signup_form = document.querySelector("#signup-form")
 signup_form.addEventListener("submit", (e) => {
@@ -137,5 +136,3 @@ signup_form.addEventListener("submit", (e) => {
         }
     )
 })
-=======
->>>>>>> Hung
