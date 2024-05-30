@@ -35,7 +35,8 @@
         "vitri":"CF",
         "ovr":115,
         "nuoc":"BRAZIL",
-        "img":"./images/pele.png"
+        "img":"./images/pele.png",
+        "gia":"$100000000"
         
     },
     {
@@ -74,7 +75,8 @@
         "vitri":"CF",
         "ovr":115,
         "nuoc":"HOLLAND",
-        "img":"./images/johan.png"
+        "img":"./images/johan.png",
+        "gia":"$68000000"
     },
     {
         "id" : 3,
@@ -112,7 +114,8 @@
         "vitri":"CAM",
         "ovr":114,
         "nuoc":"FRANCE",
-        "img":"./images/zidane.png"
+        "img":"./images/zidane.png",
+        "gia":""
     },
     {
         "id" : 4,

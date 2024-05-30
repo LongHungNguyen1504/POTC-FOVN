@@ -10,25 +10,34 @@ async function fetchAndDisplaySingleProduct() {
 function displayPlayer(player) {
   tong.innerHTML = `
     <div id="in4">
-    <div id="icon">
-     <h1>
-         <img src="" alt="">
-         <b>${player.name}</b>
-     </h1>
-    </div>
-     <div id="vitri">
-         <span>
-             <b>${player.vitri}</b>
-             <i>${player.ovr}</i>
-         </span>
-     </div>
-     <div id="mua">
-        <a href="">  <b>ICON</b></a>
-         <a href="" id="hinh"><b>${player.nuoc}</b>
-            <img src="${player.flag}" alt="">
-         </a>
-             
-     </div>
+    <div id="left">
+           <div id="icon">
+            <h1>
+                <img src="" alt="">
+                <b>${player.name}</b>
+            </h1>
+           </div>
+           <div id="mua">
+               <a href="">  <b>ICON</b></a>
+                <a href="" id="hinh"><b>${player.nuoc}</b>
+                    <img src="${player.flag}" alt="">
+                </a>
+                    
+            </div>
+          </div>
+            <div id="mid">
+              <div id="vitri">
+                <span>
+                    <b>${player.vitri}</b>
+                    <i>${player.ovr}</i>
+                </span>
+            </div>
+            <div id="tien">
+              <b>
+                Giá tiền: <span>1000000000</span>
+              </b>
+             </div>
+            </div>
     
    </div>
    <div id="imgs">
