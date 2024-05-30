@@ -38,8 +38,8 @@ signupForm.addEventListener('submit', (event) => {
         return
     } else if (!isValidPassword(password)) {
         Swal.fire({
-            title: 'Invalid Password!',
-            text: 'Password must contain letters and numbers! Please enter again!',
+            title: 'Mật khẩu dùng được!',
+            text: 'Mật khẩu bắt buộc phải chữ chữ cái và số! Vui lòng nhập lại!',
             icon: 'error',
             confirmButtonText: 'OK'
         })

@@ -82,7 +82,7 @@ nav.before .active-element {
 
 /* signup */
 #signup-form {
-    margin-left: 345px;
+    margin-left: 300px;
     margin-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
@@ -92,7 +92,6 @@ nav.before .active-element {
 
 .form-container {
     height: auto;
-    
     border-radius: 50px;
     background-image: url(https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/bg-news-banner.jpg);
     width: 800px;
@@ -111,11 +110,12 @@ nav.before .active-element {
     background-color: transparent;
     display: flex;
     width: 500px;
-    height: 30px;
-    margin-left: -245px;
+    margin-left: -220px;
     border: #07f468 3px solid;
     border-radius: 10px;
     color: #fff;
+    padding: 10px;
+    margin-top: -5px;
 }
 
 .form-container input::placeholder {
@@ -124,36 +124,41 @@ nav.before .active-element {
 }
 
 .form-container button {
-    margin-left: -100px;
+    margin-left: -90px;
     background-color: #07f468;
     color: #fff;
-    border-radius: 5px ;
+    border-radius: 5px;
     font-size: 23px;
     border: #000000 3px solid;
-   padding-left: 30px;
-   padding-top: 2px;
+    padding-left: 30px;
+    padding-top: 2px;
     align-items: center;
     padding-bottom: 2px;
     padding-right: 30px;
 }
-.form-container button:hover{
+
+.form-container button:hover {
     color: #000000;
-    transition: 0.7s ;
+    transition: 0.7s;
 }
+
 .form-container h6 {
     font-size: 13px;
     color: #fff;
-    margin-left: -140px;
+    margin-left: -125px;
 }
-.form-container h6 a{
+
+.form-container h6 a {
     font-size: 13px;
     color: red;
     text-decoration: none;
 }
-.form-container h6 a:hover{
+
+.form-container h6 a:hover {
     transition: 0.5s;
     color: #07f468;
 }
+
 /* footer */
 #footer {
     color: aliceblue;
